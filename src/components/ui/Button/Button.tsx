@@ -1,9 +1,9 @@
 import { FC, PropsWithChildren } from 'react'
 
 type Props = {
-    onClick: () => void
+    onClick: React.MouseEventHandler<HTMLButtonElement> | undefined
 }
 
 export const Button: FC<PropsWithChildren<Props>> = ({ children, onClick }) => {
-    return <button>{children}</button>
+    return <button onClick={onClick}>{children}</button>
 }
