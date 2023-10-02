@@ -1,9 +1,9 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC, MouseEventHandler, PropsWithChildren } from 'react'
 
 type Props = {
-    onClick: () => void
+    onClick: MouseEventHandler<HTMLButtonElement>
 }
 
 export const Button: FC<PropsWithChildren<Props>> = ({ children, onClick }) => {
-    return <button>{children}</button>
+    return <button onClick={onClick}>{children}</button>
 }
