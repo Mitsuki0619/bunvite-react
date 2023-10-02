@@ -22,7 +22,7 @@ jobs:
               run: bun run fmt:check
 
             - name: Run build
-              run: bun run build --if-present
+              run: bun run build
 
             - name: Run test
               run: bun run test
