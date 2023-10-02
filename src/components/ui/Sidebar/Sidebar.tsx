@@ -3,7 +3,10 @@ import { FC, PropsWithChildren } from 'react'
 export const Sidebar: FC<PropsWithChildren> = ({ children }) => {
     return (
         <aside>
-            sidebar
+            <h1>
+
+                BunVite
+            </h1>
             {children}
         </aside>
     )
